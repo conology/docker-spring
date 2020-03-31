@@ -6,7 +6,7 @@ node {
     stage ('Build'){
         
         sh 'echo Starting build of spring'
-        sh 'docker build -t conology/spring'
+        sh 'docker build -t conology/spring .'
     }
     stage ('Deploy') {
         
