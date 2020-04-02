@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-COPY maven-wrapper.jar app.jar
+COPY helloworld-spring-1.4.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
